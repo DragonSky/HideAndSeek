@@ -3,7 +3,10 @@ from collections import defaultdict
 import weakref
 
 
-class Location():
+class Location(object):
+    """
+        This class will be used to contain the details of particular location.
+    """
     __refs__ = defaultdict(list)
 
     def __init__(self, x, y, z, category=None):

@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1aabda66-dbc5-45f2-afc1-e880ab0300bd" name="Default" comment="" />
+    <list default="true" id="1aabda66-dbc5-45f2-afc1-e880ab0300bd" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/world.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/location.py" afterPath="$PROJECT_DIR$/location.py" />
+    </list>
     <ignored path="HideAndSeek.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -33,19 +36,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="location.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="location.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/location.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.20147058" vertical-offset="339" max-vertical-offset="1020">
-              <caret line="28" column="20" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1071">
+              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding>
                 <element signature="e#25#60#0" expanded="true" />
-                <element signature="e#186#349#0" expanded="true" />
-                <element signature="e#665#745#0" expanded="true" />
-                <element signature="e#784#1022#0" expanded="true" />
-                <element signature="e#1073#1183#0" expanded="true" />
-                <element signature="e#1238#1362#0" expanded="true" />
-                <element signature="e#1427#1629#0" expanded="true" />
+                <element signature="e#287#450#0" expanded="true" />
+                <element signature="e#766#846#0" expanded="true" />
+                <element signature="e#885#1123#0" expanded="true" />
+                <element signature="e#1174#1284#0" expanded="true" />
+                <element signature="e#1339#1463#0" expanded="true" />
+                <element signature="e#1528#1730#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="world.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/world.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.125" vertical-offset="0" max-vertical-offset="680">
+              <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+              <folding>
+                <element signature="e#80#84#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -110,6 +125,7 @@
         <option value="$PROJECT_DIR$/__item.py" />
         <option value="$PROJECT_DIR$/__init__.py" />
         <option value="$PROJECT_DIR$/location.py" />
+        <option value="$PROJECT_DIR$/world.py" />
       </list>
     </option>
   </component>
@@ -392,12 +408,12 @@
           <caret line="27" column="23" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
           <folding>
             <element signature="e#25#60#0" expanded="true" />
-            <element signature="e#186#349#0" expanded="true" />
-            <element signature="e#665#745#0" expanded="true" />
-            <element signature="e#784#1022#0" expanded="true" />
-            <element signature="e#1073#1183#0" expanded="true" />
-            <element signature="e#1238#1362#0" expanded="true" />
-            <element signature="e#1427#1629#0" expanded="true" />
+            <element signature="e#287#450#0" expanded="true" />
+            <element signature="e#766#846#0" expanded="true" />
+            <element signature="e#885#1123#0" expanded="true" />
+            <element signature="e#1174#1284#0" expanded="true" />
+            <element signature="e#1339#1463#0" expanded="true" />
+            <element signature="e#1528#1730#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -434,30 +450,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/character.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="119">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/event.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1028">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/npc.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1028">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/item.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1028">
@@ -474,18 +466,52 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/character.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="119">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/event.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1028">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/location.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.20147058" vertical-offset="339" max-vertical-offset="1020">
-          <caret line="28" column="20" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1071">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding>
             <element signature="e#25#60#0" expanded="true" />
-            <element signature="e#186#349#0" expanded="true" />
-            <element signature="e#665#745#0" expanded="true" />
-            <element signature="e#784#1022#0" expanded="true" />
-            <element signature="e#1073#1183#0" expanded="true" />
-            <element signature="e#1238#1362#0" expanded="true" />
-            <element signature="e#1427#1629#0" expanded="true" />
+            <element signature="e#287#450#0" expanded="true" />
+            <element signature="e#766#846#0" expanded="true" />
+            <element signature="e#885#1123#0" expanded="true" />
+            <element signature="e#1174#1284#0" expanded="true" />
+            <element signature="e#1339#1463#0" expanded="true" />
+            <element signature="e#1528#1730#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/npc.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1028">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/world.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.125" vertical-offset="0" max-vertical-offset="680">
+          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+          <folding>
+            <element signature="e#80#84#0" expanded="true" />
           </folding>
         </state>
       </provider>
