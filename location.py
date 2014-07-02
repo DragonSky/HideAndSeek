@@ -23,7 +23,7 @@ class Location(object):
     #             print("removing {} from location list.".format(self))
 
     def __repr__(self):
-        return "<Location: {}, {}, {}>".format(self.x_coord, self.y_coord, self.z_coord)
+        return "<Location: {}, {}, {}, {}>".format(self.x_coord, self.y_coord, self.z_coord, self.category)
 
     def __eq__(self, other):
         if isinstance(other, self.__class__) and self.x_coord == other.x_coord and self.y_coord == other.y_coord \
@@ -32,26 +32,20 @@ class Location(object):
         return False
 
     def location_matches(self, x, y, z):
-        if self.x_coord == x and self.y_coord == y and self.z_coord == z:
-            return True
-        return False
-
-    @classmethod
-    def get_instances(cls):
-        for inst_ref in cls.__refs__[cls]:
-            inst = inst_ref()
-            if inst is not None:
-                yield inst
-
-    @classmethod
-    def find_locations(cls, x, y, z):
-        locations = list()
-        for inst_ref in cls.__refs__[cls]:
-            inst = inst_ref()
-            if inst.location_matches(x, y, z):
-                locations.append(inst)
-        return locations
+        """
+            >>> location = Location(1, 2, 3)
+            >>> location.location_matches(1, 2, 3)
+            True
+            >>> location.location_matches(5, 2, 3)
+            False
+            >>> location.location_matches(1, 5, 3)
+            False
+            >>> location.location_matches(1, 2, 5)
+            False
+        """
+        return self.x_coord == x and self.y_coord == y and self.z_coord == z
 
 
-
-
+if __name__ == "__main__":
+    import doctest
+    doctest.testmod()
